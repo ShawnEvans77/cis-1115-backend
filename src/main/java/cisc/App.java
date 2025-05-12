@@ -12,7 +12,7 @@ public class App {
 
                 cors.add(it -> it.anyHost());
             });
-        }).start(Integer.parseInt(System.getenv("PORT")));
+        }).start(7070);
 
         app.get("/", ctx -> ctx.result("Backend is working!"));
 
